@@ -89,3 +89,14 @@ window.addEventListener("click", (event) => {
         tradeModal.style.display = "none";
     }
 });
+
+// Event listeners for login and signup buttons
+document.getElementById("loginBtn").addEventListener("click", () => {
+    alert("Login functionality not implemented yet.");
+    // You can redirect to a login page or show a modal with login form
+});
+
+document.getElementById("signupBtn").addEventListener("click", () => {
+    alert("Signup functionality not implemented yet.");
+    // You can redirect to a signup page or show a modal with signup form
+});
