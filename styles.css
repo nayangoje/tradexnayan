@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0d47a1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.account-info {
+    font-size: 1.2rem;
+}
+
+.trade-actions button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.trade-actions button:hover {
+    background-color: #218838;
+}
+
+.market {
+    margin-top: 50px;
+}
+
+.market h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#market-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#market-table th, #market-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#market-table th {
+    background-color: #0d47a1;
+    color: white;
+}
+
+#market-table td button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#market-table td button:hover {
+    background-color: #0056b3;
+}
+
+.trade-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.trade-modal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.trade-modal input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.trade-modal button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.trade-modal button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

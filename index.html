@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Paper Trading</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TradeX</h1>
+        </div>
+        <div>
+            <button id="login">Login</button>
+            <button id="signup">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to TradeX</h2>
+            <p>Trade cryptocurrencies with $1,000,000 in virtual funds! Start practicing with no risk.</p>
+        </section>
+
+        <section class="account">
+            <div class="account-info">
+                <h3>Your Portfolio</h3>
+                <p>Account Balance: <span id="account-balance">$1,000,000</span></p>
+            </div>
+            <div class="trade-actions">
+                <button id="buyBtn">Buy Crypto</button>
+                <button id="sellBtn">Sell Crypto</button>
+            </div>
+        </section>
+
+        <section class="market">
+            <h3>Market Overview</h3>
+            <table id="market-table">
+                <tr>
+                    <th>Crypto</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Bitcoin (BTC)</td>
+                    <td id="btc-price">30,000</td>
+                    <td id="btc-change">+2%</td>
+                    <td><button class="trade" data-crypto="BTC">Trade</button></td>
+                </tr>
+                <tr>
+                    <td>Ethereum (ETH)</td>
+                    <td id="eth-price">2,000</td>
+                    <td id="eth-change">+1.5%</td>
+                    <td><button class="trade" data-crypto="ETH">Trade</button></td>
+                </tr>
+                <tr>
+                    <td>Litecoin (LTC)</td>
+                    <td id="ltc-price">100</td>
+                    <td id="ltc-change">+0.5%</td>
+                    <td><button class="trade" data-crypto="LTC">Trade</button></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="trade-modal" id="tradeModal">
+            <div class="modal-content">
+                <h2>Enter Trade Details</h2>
+                <label for="crypto-amount">Amount:</label>
+                <input type="number" id="crypto-amount" min="1" placeholder="Enter Amount">
+                <button id="confirmTradeBtn">Confirm Trade</button>
+                <button id="cancelTradeBtn">Cancel</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TradeX. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
